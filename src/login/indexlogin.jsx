@@ -10,23 +10,25 @@ export default function Login() {
       <div className={styles.caixatotal}>
         <div className={styles.login}>
           <div className={styles.caixaText}>
-            <i>
-              <GiAstronautHelmet />
-            </i>
-            <span>Conheça novo Planeta</span>
-            <i>
-              <PiPlanetDuotone />
-            </i>
-            <p>E site para encontrar novo mundo pela internet</p>
+            <div className={styles.caixatitul}>
+              <i>
+                <GiAstronautHelmet />
+              </i>
+              <span>Conheça novo Planeta</span>
+              <i>
+                <PiPlanetDuotone />
+              </i>
+              <p>E site para encontrar novo mundo pela internet</p>
+            </div>
 
             <img src={imgLogin} alt="astronauta" />
             <button>Cadastre AQUI!</button>
           </div>
           <div className={styles.caixaLogin}>
-            <i>
+            <i className={styles.top}>
               <GiAstronautHelmet />
             </i>
-            <p>Login</p>
+            <span>Login</span>
             <div className={styles.contentLogin}>
               <p>E-mail</p>
 
@@ -35,17 +37,16 @@ export default function Login() {
               <input type="password" />
 
               <p>
+                <input type="checkbox" /> Lembrar-me
+              </p>
+              <div className={styles.caixabutto}>
                 <button>
-                  Decolar{" "}
+                  Decolar
                   <i>
                     <BsRocketTakeoff />
                   </i>
                 </button>
-              </p>
-
-              <p>
-                <input type="checkbox" /> Lembrar-me
-              </p>
+              </div>
             </div>
           </div>
         </div>
